@@ -86,12 +86,3 @@ http://localhost:3000
 **Saurav Yadav**
 B.Tech CSE | Kanpur Institute of Technology
 [GitHub](https://github.com/Saurav0094) | [LinkedIn](https://www.linkedin.com/in/saurav-yadav-124293228/)
-
-**4. Run Frontend**
-```bash
-cd demo-bank-redux
-npm install
-npm start
-```
-
-**5. Open in browser**
