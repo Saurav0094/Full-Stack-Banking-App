@@ -1,146 +1,168 @@
-# \# 🏦 Full Stack Banking Application
+\# 🏦 Full Stack Banking Application
 
-# 
 
-# A full stack online banking application built with \*\*Java Spring Boot\*\*, \*\*React Redux\*\*, \*\*JWT Authentication\*\* and \*\*MySQL\*\*.
 
-# 
+A full stack online banking application built with \*\*Java Spring Boot\*\*, \*\*React Redux\*\*, \*\*JWT Authentication\*\* and \*\*MySQL\*\*. Features secure user authentication, account management, and real-time transaction history.
 
-# \---
 
-# 
 
-# \## 📸 Screenshots
+\---
 
-# 
 
-# \### Sign In
 
-# !\[Sign In](screenshots/ss\_1\_front\_page.png)
+\## 📸 Screenshots
 
-# 
 
-# \### Sign Up
 
-# !\[Sign Up](screenshots/ss\_2\_singup.png)
+\### 🔐 Sign In
 
-# 
+!\[Sign In](screenshots/loginPage.png)
 
-# \### Dashboard
 
-# !\[Dashboard 1](screenshots/ProjecPage1.png)
 
-# !\[Dashboard 2](screenshots/ProjectPage2.png)
+\### 📝 Sign Up
 
-# !\[Dashboard 3](screenshots/ProjectPage3.png)
+!\[Sign Up](screenshots/ss\_2\_singup.png)
 
-# !\[Dashboard 4](screenshots/ProjectPage5.png)
 
-# 
 
-# \---
+\### 📊 Dashboard
 
-# 
+!\[Dashboard 1](screenshots/ProjecPage1.png)
 
-# \## 🚀 Features
 
-# \- Secure JWT authentication and authorization
 
-# \- User registration and login
+!\[Dashboard 2](screenshots/ProjectPage2.png)
 
-# \- Account creation and management
 
-# \- Fund transfers between accounts
 
-# \- Transaction history tracking
+!\[Dashboard 3](screenshots/ProjectPage3.png)
 
-# \- Real-time balance updates
 
-# \- Responsive React dashboard
 
-# 
+!\[Dashboard 4](screenshots/ProjectPage5.png)
 
-# \---
 
-# 
 
-# \## 🛠️ Tech Stack
+\---
 
-# 
 
-# | Layer | Technology |
 
-# |---|---|
+\## 🚀 Features
 
-# | Backend | Java, Spring Boot |
+\- Secure JWT authentication and authorization
 
-# | Frontend | React, Redux |
+\- User registration and login
 
-# | Database | MySQL 8.0 |
+\- Account creation and management
 
-# | Authentication | JWT |
+\- Fund transfers between accounts
 
-# | Security | BCrypt Password Hashing |
+\- Transaction history tracking
 
-# | API | REST APIs |
+\- Real-time balance updates
 
-# | Tools | Git, GitHub, Maven |
+\- Responsive React dashboard
 
-# 
 
-# \---
 
-# 
+\---
 
-# \## ⚙️ How to Run
 
-# 
 
-# \### 1. Clone the repository
+\## 🛠️ Tech Stack
 
-# ```bash
 
-# git clone https://github.com/Saurav0094/Full-Stack-Banking-App.git
 
-# ```
+| Layer | Technology |
 
-# 
+|---|---|
 
-# \### 2. Configure Database
+| Backend | Java, Spring Boot |
 
-# ```sql
+| Frontend | React, Redux |
 
-# CREATE DATABASE IF NOT EXISTS demobankdb;
+| Database | MySQL 8.0 |
 
-# ```
+| Authentication | JWT |
 
-# 
+| Security | BCrypt Password Hashing |
 
-# \### 3. Run Backend
+| API | REST APIs |
 
-# ```bash
+| Tools | Git, GitHub, Maven |
 
-# cd "Online Banking App Spring Boot"
 
-# mvnw.cmd spring-boot:run
 
-# ```
+\---
 
-# 
 
-# \### 4. Run Frontend
 
-# ```bash
+\## ⚙️ How to Run
 
-# cd demo-bank-redux
 
-# npm install
 
-# npm start
+\*\*1. Clone the repository\*\*
 
-# ```
+```bash
 
-# 
+git clone https://github.com/Saurav0094/Full-Stack-Banking-App.git
 
-# \### 5. Open in browser
+```
+
+
+
+\*\*2. Configure Database\*\*
+
+```sql
+
+CREATE DATABASE IF NOT EXISTS demobankdb;
+
+```
+
+
+
+\*\*3. Run Backend\*\*
+
+```bash
+
+cd "Online Banking App Spring Boot"
+
+mvnw.cmd spring-boot:run
+
+```
+
+
+
+\*\*4. Run Frontend\*\*
+
+```bash
+
+cd demo-bank-redux
+
+npm install
+
+npm start
+
+```
+
+
+
+\*\*5. Open in browser\*\*
+
+http://localhost:3000
+
+
+
+\---
+
+
+
+\## 👨‍💻 Author
+
+\*\*Saurav Yadav\*\*
+
+B.Tech CSE | Kanpur Institute of Technology
+
+\[GitHub](https://github.com/Saurav0094) | \[LinkedIn](https://www.linkedin.com/in/saurav-yadav-124293228/)
 
