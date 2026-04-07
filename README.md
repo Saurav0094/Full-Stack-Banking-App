@@ -63,4 +63,4 @@ http://localhost:3000
 
 **Saurav Yadav**
 B.Tech CSE | Kanpur Institute of Technology
-[GitHub](https://github.com/Saurav0094) | [LinkedIn](https://linkedin.com/in/Saurav)
+[GitHub](https://github.com/Saurav0094) | [LinkedIn](https://www.linkedin.com/in/saurav-yadav-124293228/)
