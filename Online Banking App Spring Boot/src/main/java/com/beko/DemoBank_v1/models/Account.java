@@ -8,13 +8,14 @@ import java.time.LocalDateTime;
 @Entity
 public class Account {
     @Id
-    private  int account_id;
-    private int user_id;
+    private int account_id;
+    private String user_id;
     private String account_number;
     private String account_name;
     private String account_type;
     private BigDecimal balance;
     private LocalDateTime create_at;
+    private LocalDateTime updated_at;
 
     public int getAccount_id() {
         return account_id;
@@ -24,11 +25,11 @@ public class Account {
         this.account_id = account_id;
     }
 
-    public int getUser_id() {
+    public String getUser_id() {
         return user_id;
     }
 
-    public void setUser_id(int user_id) {
+    public void setUser_id(String user_id) {
         this.user_id = user_id;
     }
 
@@ -79,9 +80,4 @@ public class Account {
     public void setUpdated_at(LocalDateTime updated_at) {
         this.updated_at = updated_at;
     }
-
-    private LocalDateTime updated_at;
-
-
-
 }

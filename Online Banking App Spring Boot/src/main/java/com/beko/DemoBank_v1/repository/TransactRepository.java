@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public interface TransactRepository extends CrudRepository<Transact, Integer> {
     @Modifying
     @Transactional
-    @Query(value = "INSERT INTO transaction_history(account_id, transaction_type, amount, source, status, reason_code, created_at)" +
+    @Query(value = "INSERT INTO transact(account_id, transaction_type, amount, source, status, reason_code, created_at)" +
             "VALUES(:account_id, :transaction_type, :amount, :source, :status, :reason_code, :created_at)",nativeQuery = true)
     void logTransaction(@Param("account_id")int account_id,
                         @Param("transaction_type")String transaction_type,

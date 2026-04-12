@@ -10,5 +10,5 @@ import java.util.List;
 public interface PaymentHistoryRepository extends CrudRepository<PaymentHistory,Integer> {
 
     @Query(value = "SELECT * FROM v_payments WHERE user_id = :user_id",nativeQuery = true)
-    List<PaymentHistory> getPaymentsRecordsById(@Param("user_id")int user_id);
+    List<PaymentHistory> getPaymentsRecordsById(@Param("user_id") String user_id);
 }

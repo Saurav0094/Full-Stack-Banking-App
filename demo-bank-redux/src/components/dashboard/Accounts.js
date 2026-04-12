@@ -66,7 +66,7 @@ function Accounts(props) {
               <TableCell>{account.account_number}</TableCell>
               <TableCell>{account.account_type}</TableCell>
               <TableCell>{account.user_id}</TableCell>
-              <TableCell>{dateFormatter(account.updated_at)}</TableCell>
+              <TableCell>{account.updated_at ? dateFormatter(account.updated_at) : 'N/A'}</TableCell>
               <TableCell>{`$${account.balance}`}</TableCell>
               <TableCell align="right">
                 <Button

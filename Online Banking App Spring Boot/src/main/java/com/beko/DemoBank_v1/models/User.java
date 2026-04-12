@@ -5,10 +5,14 @@ import javax.persistence.Id;
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import org.hibernate.annotations.GenericGenerator;
+import javax.persistence.GeneratedValue;
 
 @Entity
 public class User {
     @Id
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String user_id;
     @NotEmpty(message = "The First name field cannot be empty.")
     @Size(min=3, message = "The first nmae field must greater that 3 characters")
@@ -114,9 +118,10 @@ public class User {
     private String  password;
     private String  token;
     private String  code;
-    private int verified;
+    private int verified = 0;
     private LocalDate verified_at;
     private LocalDateTime create_at;
     private LocalDateTime updated_at;
 
 }
+

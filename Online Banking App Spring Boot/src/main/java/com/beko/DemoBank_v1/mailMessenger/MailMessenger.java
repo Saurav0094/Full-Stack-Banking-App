@@ -1,27 +1,30 @@
 package com.beko.DemoBank_v1.mailMessenger;
 
 import org.springframework.mail.javamail.JavaMailSender;
-import com.beko.DemoBank_v1.config.MailConfig;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.stereotype.Component;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
+@Component
 public class MailMessenger {
+
+    private static JavaMailSender mailSender;
+
+    public MailMessenger(JavaMailSender mailSender) {
+        MailMessenger.mailSender = mailSender;
+    }
+
     public static void htmlEmailMessenger(String from, String toMail, String subject, String body) throws MessagingException {
-        //Get Mail Config:
-        JavaMailSender sender = MailConfig.getMailConfig();
-        //Set Mime Message:
-        MimeMessage message= sender.createMimeMessage();
+        MimeMessage message = mailSender.createMimeMessage();
         MimeMessageHelper htmlMessage = new MimeMessageHelper(message, true);
 
-        //Set Mail Attributes / Properties:
         htmlMessage.setTo(toMail);
         htmlMessage.setFrom(from);
         htmlMessage.setSubject(subject);
         htmlMessage.setText(body, true);
-        //Send Message:
-        sender.send(message);
+
+        mailSender.send(message);
     }
-    //End Of HTML Email Message Method
 }
