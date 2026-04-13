@@ -66,12 +66,12 @@ public class AppInterceptor implements HandlerInterceptor{
             request.getSession().setAttribute("token",token);
 
 
-            //TODO: Get Token Stored int Session:
+           /* //TODO: Get Token Stored int Session:
             System.out.println("allahım lütfen token yazsın "+ request.getSession().getAttribute("token"));
 
             //TODO: Get User Object Stored In Session:
             System.out.println("allahım lütfen user yazsın "+ request.getSession().getAttribute("user"));
-
+                */
             //TODO: Validate Session Attributes / Objects:
             if(user == null ){
                 throw new CustomError("You need to be logged in.",HttpServletResponse.SC_UNAUTHORIZED);

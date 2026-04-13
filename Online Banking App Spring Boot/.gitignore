@@ -1,0 +1,8 @@
+# Sensitive configuration
+Online Banking App Spring Boot/src/main/resources/application.properties
+
+# Build outputs
+Online Banking App Spring Boot/target/
+
+# Node modules
+demo-bank-redux/node_modules/
